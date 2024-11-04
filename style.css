@@ -218,6 +218,12 @@ nav {
 }
 
 @media (max-width: 768px) {
+    nav, .container, .section1, .section2, .section3, .sectionlast, .album {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
     h1 {
         font-size: 4rem;
     }
@@ -239,9 +245,6 @@ nav {
     .character {
         height: auto;
         margin-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .playPause {
@@ -265,6 +268,12 @@ nav {
 }
 
 @media (max-width: 480px) {
+    nav, .container, .section1, .section2, .section3, .sectionlast, .album {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
     h1 {
         font-size: 3rem;
     }
@@ -290,9 +299,5 @@ nav {
         padding: 6px 12px;
         margin-top: 8px;
     }
-
-    .album {
-        flex-direction: column;
-        align-items: center;
-    }
 }
+
