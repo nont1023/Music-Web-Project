@@ -1,6 +1,18 @@
-*{
+* {
     text-decoration: none;
 }
+
+body {
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
 .section1 {
     position: relative; 
     height: 100vh;
@@ -14,16 +26,8 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    }
-body{
-    color: aliceblue;
-    background-color: rgb(0, 0, 0);
-    font-size: 30px;
-    margin: 0;
 }
-a{
-    color: inherit;
-}
+
 .section1::before {
     content: "";
     position: absolute;
@@ -33,17 +37,20 @@ a{
     left: 0px;
     background-color: rgba(0,0,0,0.5);
 }
+
 .section2 {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 400px;
-    }
+}
+
 .section3 {
-        margin-top: 180px;
-        background: none;
-    }
+    margin-top: 180px;
+    background: none;
+}
+
 h1 {
     position: relative;
     color: #f4ff20;  
@@ -51,19 +58,23 @@ h1 {
     line-height: 0.9;
     text-align: center;
     transition: 0.3s;
-  }
+}
+
 h1:hover {
     font-size: 9rem;
 }
+
 h2 {
     margin: 20px 0px 0px 0px;
     padding: 10px;
     color: rgb(0, 0, 0);
 }
+
 p {
     color: rgb(0, 0, 0);
     margin-top: 0px;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -76,6 +87,7 @@ p {
     margin: 20px;
     background-color: rgb(255, 222, 35);
 }
+
 .character {
     display: flex;
     flex-direction: column;
@@ -87,6 +99,7 @@ p {
     margin-bottom: 70px;
     background-color: rgb(0, 0, 0);
 }
+
 .char {
     list-style-type: none;
     display: flex;
@@ -96,15 +109,18 @@ p {
     width: 100%;
     background-color: rgb(0, 0, 0);
 }
+
 h3 {
     margin: 10px 0 0 100px;
     font-size: 48px;
     color: rgb(255, 222, 35);
 }
+
 .logo {
     margin: 10px 0 0 30px;
     padding: 0;
 }
+
 nav {
     margin: 0;
     padding: 0;
@@ -122,6 +138,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar {
     display: flex;
     justify-content: flex-end;
@@ -129,15 +146,18 @@ nav {
     list-style-type: none;
     margin-right: 20px;
 }
+
 .navcontent {
     padding: 10px 15px;
     color: black;
     transition: 0.3s;
 }
+
 .navcontent:hover {
     background-color: black;
     color: rgb(255, 222, 35);
 }
+
 .album {
     background: none;
     width: 84%;
@@ -147,6 +167,7 @@ nav {
     flex-direction: row;
     justify-content: start;
 }
+
 .singles {
     list-style-type: none;
     display: flex;
@@ -154,10 +175,10 @@ nav {
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .songs {
     align-items: center;
     justify-content: space-evenly;
-    color: rgb(0, 0, 0);
     font-size: 20px;
     background-color: rgb(255, 222, 35);
     width: 200px;
@@ -167,35 +188,35 @@ nav {
     margin-bottom: 3%;
     overflow: hidden;
     color: rgb(255, 222, 35);
-    background-image: -webkit-linear-gradient(50deg, rgb(24, 24, 24) 50%, transparent 50%);
     background-image: linear-gradient(50deg, rgb(24, 24, 24) 50%, transparent 50%);
     background-size: 900px;
     background-repeat: no-repeat;
     background-position: 0%;
-    -webkit-transition: background 400ms ease-in-out;
     transition: background 400ms ease-in-out;
-    transition: 400ms;
 }
-.songs:hover{
+
+.songs:hover {
     background-position: 125%;
     color: black;
 }
+
 .playPause {
     background-color: rgb(255, 37, 74);
     outline: none;
     border-radius: 5px;
     border-style: none;
-    align-items: center;
-    align-content: center;
     padding: 4px;
 }
+
 .playPause:hover {
     background-color: rgb(255, 82, 111);
 }
+
 .sectionlast {
     text-align: center;
     font-size: 20px;
 }
+
 @media (max-width: 768px) {
     h1 {
         font-size: 4rem;
@@ -218,6 +239,9 @@ nav {
     .character {
         height: auto;
         margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .playPause {
@@ -265,5 +289,10 @@ nav {
         font-size: 14px;
         padding: 6px 12px;
         margin-top: 8px;
+    }
+
+    .album {
+        flex-direction: column;
+        align-items: center;
     }
 }
