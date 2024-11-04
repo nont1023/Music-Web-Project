@@ -245,86 +245,37 @@ nav {
 }
 
 @media (max-width: 768px) {
-    nav, .container, .section1, .section2, .section3, .sectionlast, .album {
-        max-width: 90%;
-        margin: 0 auto;
-        padding: 0 10px;
-    }
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    h1:hover {
-        font-size: 6rem;
-    }
-
-    h3 {
-        font-size: 36px;
-        margin-left: 20px;
-    }
-
-    .songs {
-        width: 100%;
-        font-size: 16px;
-    }
-
-    .character {
-        height: auto;
-        margin-bottom: 30px;
-    }
-
-    .playPause {
-        margin-top: 10px;
-        padding: 8px 16px;
-        font-size: 16px;
-    }
-
-    .container {
-        height: auto;
-        padding: 10px;
-    }
-
-    nav {
-        height: 60px;
-    }
-
-    .navcontent {
-        padding: 8px 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    nav, .container, .section1, .section2, .section3, .sectionlast, .album {
-        max-width: 90%;
-        margin: 0 auto;
-        padding: 0 10px;
+    body {
+        font-size: 1.8rem;
     }
 
     h1 {
         font-size: 3rem;
     }
 
-    h1:hover {
-        font-size: 5rem;
-    }
-
-    .section2, .section3 {
-        height: auto;
-    }
-
-    .navcontent {
-        padding: 5px 10px;
-    }
-
-    .songs {
-        font-size: 14px;
+    h3 {
+        font-size: 1.6rem;
     }
 
     .playPause {
-        font-size: 14px;
         padding: 6px 12px;
-        margin-top: 8px;
     }
 }
 
+@media (max-width: 480px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .playPause {
+        padding: 4px 8px;
+    }
+}
