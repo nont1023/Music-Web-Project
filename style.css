@@ -121,6 +121,32 @@ h3 {
     padding: 0;
 }
 
+.logo img {
+    width: 68px;
+    height: 64px;
+}
+
+.character img {
+    width: 150px;
+    height: 200px;
+}
+
+.songs img {
+    width: 195px;
+    height: 195px;
+}
+
+.playPause .playb,
+.playPause .pauseb {
+    width: 16px;
+    height: 16px;
+}
+
+.playPause img {
+    width: 100%;
+    height: auto;
+}
+
 nav {
     margin: 0;
     padding: 0;
@@ -206,6 +232,7 @@ nav {
     border-radius: 5px;
     border-style: none;
     padding: 4px;
+    
 }
 
 .playPause:hover {
