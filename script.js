@@ -17,23 +17,23 @@ let currentAudio = null;
           if (currentAudio !== null) {
             if (button === prevButton) {
               currentAudio.pause();
-              button.innerHTML = '<img src="play_icon.png" width="16px" height="16px" alt="Play">';
+              button.innerHTML = '<img src="play_icon.png" alt="Play">';
               currentAudio = null;
               prevButton = null;
               return;
             }
     
             currentAudio.pause();
-            prevButton.innerHTML = '<img src="play_icon.png" width="16px" height="16px" alt="Play">';
+            prevButton.innerHTML = '<img src="play_icon.png" alt="Play">';
           }
     
           currentAudio = audio;
     
           audio.play();
-          button.innerHTML = '<img src="pause_icon.png" width="16px" height="16px" alt="Pause">';
+          button.innerHTML = '<img src="pause_icon.png" alt="Pause">';
           prevButton = button;
     
           audio.addEventListener('ended', () => {
-            button.innerHTML = '<img src="play_icon.png" width="16px" height="16px" alt="Play">';
+            button.innerHTML = '<img src="play_icon.png" alt="Play">';
           });
         }
